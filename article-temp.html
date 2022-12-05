@@ -2,36 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="article-temp-styles.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="css/article-temp-styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a129886e82.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>The Basic Language of the Web: HTML</title>
   </head>
 
   <body>
-    <!--
-    <h1>The Basic Language of the Web: HTML</h1>
-    <h2>The Basic Language of the Web: HTML</h2>
-    <h3>The Basic Language of the Web: HTML</h3>
-    <h4>The Basic Language of the Web: HTML</h4>
-    <h5>The Basic Language of the Web: HTML</h5>
-    <h6>The Basic Language of the Web: HTML</h6>
-    -->
+    <nav data-toggled="false" data-transitionable="true">
+      <div id="nav-logo-section" class="nav-section">
+        <a href="#">
+          <i class="fa-solid fa-plate-wheat"></i>
+        </a>
+      </div>
+
+      <div id="nav-mobile-section">
+        <div id="nav-content-section" class="nav-section">
+          <a href="#">ABOUT</a>
+          <a href="#">GALLERY</a>
+          <a href="#">ARTICLES</a>
+        </div>
+
+        <div id="nav-socials-section" class="nav-section">
+          <a href="#">
+            <i class="fa-brands fa-google-drive"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </div>
+
+        <div id="nav-members-section" class="nav-section">
+          <a href="#">MEMBERS</a>
+          <a href="#">CONTACT</a>
+        </div>
+      </div>
+
+      <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <script src="js/indexmobile.js"></script>
+    </nav>
 
     <div class="container">
-      <header class="main-header clearfix">
-        <h1>📘 The Code Magazine</h1>
-
-        <nav>
-          <!-- <strong>This is the navigation</strong> -->
-          <a href="blog.html">Blog</a>
-          <a href="#">Challenges</a>
-          <a href="flexbox.html">Flexbox</a>
-          <a href="css-grid.html">CSS Grid</a>
-        </nav>
-
-        <!-- <div class="clear"></div> -->
-      </header>
-
       <!-- ONLY NECESSARY FOR FLEXBOX -->
       <!-- <div class="row"> -->
       <article>
@@ -40,7 +65,7 @@
 
           <div class="author-box">
             <img
-              src="img/laura-jones.jpg"
+              src="images/plankton.jpg"
               alt="Headshot of Laura Jones"
               height="50"
               width="50"
@@ -53,13 +78,12 @@
           </div>
 
           <img
-            src="img/post-img.jpg"
+            src="images/plankton.jpg"
             alt="HTML code on a screen"
             width="500"
-            height="200"
+            height="400"
             class="post-img"
           />
-          <button>❤️ Like</button>
         </header>
 
         <p>
@@ -88,12 +112,6 @@
         </p>
         <p>In HTML, each element is made up of 3 parts:</p>
 
-        <ol>
-          <li class="first-li">The opening tag</li>
-          <li>The closing tag</li>
-          <li>The actual element</li>
-        </ol>
-
         <p>
           You can learn more at
           <a
@@ -110,66 +128,11 @@
           the web. Here are 5 of them:
         </p>
 
-        <ul>
-          <li class="first-li">
-            To be able to use the fundamental web dev language
-          </li>
-          <li>
-            To hand-craft beautiful websites instead of relying on tools like
-            Worpress or Wix
-          </li>
-          <li>To build web applications</li>
-          <li>To impress friends</li>
-          <li>To have fun 😃</li>
-        </ul>
-
         <p>Hopefully you learned something new here. See you next time!</p>
       </article>
 
-      <aside>
-        <h4>Related posts</h4>
-
-        <ul class="related">
-          <li class="related-post">
-            <img
-              src="img/related-1.jpg"
-              alt="Person programming"
-              width="75"
-              height="75"
-            />
-            <div>
-              <a href="#" class="related-link">How to Learn Web Development</a>
-              <p class="related-author">By Jonas Schmedtmann</p>
-            </div>
-          </li>
-          <li class="related-post">
-            <img
-              src="img/related-2.jpg"
-              alt="Lightning"
-              width="75"
-              height="75"
-            />
-            <div>
-              <a href="#" class="related-link">The Unknown Powers of CSS</a>
-              <p class="related-author">By Jim Dillon</p>
-            </div>
-          </li>
-          <li class="related-post">
-            <img
-              src="img/related-3.jpg"
-              alt="JavaScript code on a screen"
-              width="75"
-              height="75"
-            />
-            <div>
-              <a href="#" class="related-link">Why JavaScript is Awesome</a>
-              <p class="related-author">By Matilda</p>
-            </div>
-          </li>
-        </ul>
-      </aside>
       <!-- </div> -->
-
+      <script src="js/indexmobile.js"></script>
       <footer>
         <p id="copyright" class="copyright text">
           Copyright &copy; 2027 by The Code Magazine.
