@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memberst</title>
+    <title>Carousel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/members.css" />
   </head>
   <body>
+    <!-- navigation bar -->
     <nav data-toggled="false" data-transitionable="true">
       <div id="nav-logo-section" class="nav-section">
         <a href="#">
@@ -43,8 +44,8 @@
         </div>
 
         <div id="nav-members-section" class="nav-section">
-          <a href="#">MEMBERS</a>
-          <a href="#">CONTACT</a>
+          <a href="members.html">MEMBERS</a>
+          <a href="contacts.html">CONTACT</a>
         </div>
       </div>
 
@@ -55,139 +56,88 @@
       <script src="js/indexmobile.js"></script>
     </nav>
 
+    <!-- Sliders -->
     <section class="carousel">
-      <article class="jomar slide">
-        <img src="images/plankton.jpg" />
-        <div class="contributions">
-          <ul class="contribution-text">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur, hic.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              quidem!
-            </li>
-          </ul>
-          <p class="member">Plankton</p>
-          <p class="position">Leader</p>
-        </div>
-      </article>
-
-      <article class="neo slide">
-        <img src="images/plankton.jpg" />
-        <div class="contributions">
-          <ul class="contribution-text">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur, hic.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              quidem!
-            </li>
-          </ul>
-          <p class="member">Plankton</p>
-          <p class="position">Leader</p>
-        </div>
-      </article>
-
-      <article class="glai slide">
-        <img src="images/plankton.jpg" />
-        <div class="contributions">
-          <ul class="contribution-text">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur, hic.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              quidem!
-            </li>
-          </ul>
-          <p class="member">Plankton</p>
-          <p class="position">Leader</p>
-        </div>
-      </article>
-
-      <article class="ian slide">
-        <img src="images/plankton.jpg" />
-        <div class="contributions">
-          <ul class="contribution-text">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur, hic.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              quidem!
-            </li>
-          </ul>
-          <p class="member">Plankton</p>
-          <p class="position">Leader</p>
-        </div>
-      </article>
-
-      <article class="gio slide">
-        <img src="images/plankton.jpg" />
-        <div class="contributions">
-          <ul class="contribution-text">
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Consequuntur, hic.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              quidem!
-            </li>
-          </ul>
-          <p class="member">Plankton</p>
-          <p class="position">Leader</p>
-        </div>
-      </article>
-
-      <button class="btn btn--left">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="btn-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
-          />
-        </svg>
+      <button class="carousel__button carousel__button--left is-hidden">
+        <i class="fa-solid fa-chevron-left carousel__images"></i>
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <div class="card">
+              <img class="carousel__image" src="images/plankton.jpg" alt="" />
+              <div class="text">
+                <p class="contributions">
+                  Loremsds ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolores, maxime!
+                </p>
+                <p class="name">Jomar Benedict Balagtas</p>
+                <p class="position">Leader</p>
+              </div>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="card">
+              <img class="carousel__image" src="images/chadward.jpg" alt="" />
+              <div class="text">
+                <p class="contributions">
+                  Loremsds ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolores, maxime!
+                </p>
+                <p class="name">Neo Jezer Pare</p>
+                <p class="position">Member</p>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="card">
+              <img class="carousel__image" src="images/sandy.jpg" alt="" />
+              <div class="text">
+                <p class="contributions">
+                  Loremsds ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolores, maxime!
+                </p>
+                <p class="name">Glaiza Mei Natividad</p>
+                <p class="position">Member</p>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="card">
+              <img class="carousel__image" src="images/neptune,jpg.jpg" alt="" />
+              <div class="text">
+                <p class="contributions">
+                  Loremsds ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolores, maxime!
+                </p>
+                <p class="name">Ian Miguel Bautista</p>
+                <p class="position">Member</p>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="card">
+              <img class="carousel__image" src="images/larry.jpg" alt="" />
+              <div class="text">
+                <p class="contributions">
+                  Loremsds ipsum dolor sit, amet consectetur adipisicing elit.
+                  Dolores, maxime!
+                </p>
+                <p class="name">Gio Alcuizar</p>
+                <p class="position">Member</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">
+        <i class="fa-solid fa-chevron-right carousel__images"></i>
       </button>
 
-      <button class="btn btn--right">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="btn-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-          />
-        </svg>
-      </button>
-
-      <div class="dots">
-        <button class="dot dot--active">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
-        <button class="dot">&nbsp;</button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button
+        ><button class="carousel__indicator"></button
+        ><button class="carousel__indicator"></button
+        ><button class="carousel__indicator"></button
+        ><button class="carousel__indicator"></button>
       </div>
     </section>
-    <script src="js/carousel-members.js " defer></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
